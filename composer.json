@@ -1,4 +1,11 @@
 {
+  "name": "laravel/package-scaffold",
+  "description": "PHP tool for scaffolding laravel package",
+  "keywords": [
+    "php",
+    "DummyCLASS"
+  ],
+  "license": "MIT",
   "require": {
     "illuminate/filesystem": "^5.8",
     "illuminate/support": "^5.8",
