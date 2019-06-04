@@ -1,0 +1,24 @@
+{
+  "name": "DummyNAMESPACE/DummyCLASS",
+  "description": "",
+  "keywords": [
+    "php",
+    "DummyCLASS"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "",
+      "email": ""
+    }
+  ],
+  "require": {
+    "php": ">=7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "DummyNAMESPACE\\": "src"
+    }
+  }
+}
+

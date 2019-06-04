@@ -1,0 +1,17 @@
+{
+  "require": {
+    "illuminate/filesystem": "^5.8",
+    "illuminate/support": "^5.8",
+    "illuminate/config": "^5.8",
+    "illuminate/console": "^5.8",
+    "illuminate/container": "^5.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Myth\\Generators\\": "src"
+    }
+  },
+  "bin": [
+    "laravel-package"
+  ]
+}

@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+/**
+ * Created by PhpStorm.
+ * User: gsh
+ * Date: 2019/6/3
+ * Time: 5:14 PM
+ */
+
+use Myth\Generators\Make;
+
+require 'vendor/autoload.php';
+
+$app = new Symfony\Component\Console\Application('Generator', '1.1.0');
+$g = new Make();
+$g->setLaravel(new \Illuminate\Container\Container());
+
+$app->add($g);
+
+$app->run();

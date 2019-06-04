@@ -1,0 +1,61 @@
+<?php
+
+namespace DummyNAMESPACE;
+
+use Illuminate\Support\ServiceProvider;
+
+/**
+ * Class DummyCLASS.
+ *
+ * @package DummyNAMESPACE
+ */
+
+class DummyCLASSServiceProvider extends ServiceProvider
+{
+    public function register()
+    {
+        $this->mergeConfigFrom(
+            __DIR__ . '/../configs/DummyCLASS.php', 'DummyCLASS'
+        );
+
+        $this->app->singleton(DummyCLASS::class, function ($app) {
+            return new DummyCLASSManager($app);
+        });
+    }
+
+    public function boot()
+    {
+        $this->publishes([
+            __DIR__ . '/../configs/DummyCLASS.php' => config_path('DummyCLASS.php'),
+        ]);
+
+        $this->loadRoutesFrom(__DIR__ . '/routes.php');
+
+        $this->loadMigrationsFrom(__DIR__ . '/migrations');
+
+        $this->loadTranslationsFrom(__DIR__ . '/translations', 'DummyCLASS');
+
+        $this->publishes([
+            __DIR__ . '/translations' => resource_path('lang/vendor/DummyCLASS'),
+        ]);
+
+        $this->loadRoutesFrom(__DIR__ . '/routes.php');
+
+        $this->loadViewsFrom(__DIR__ . '/views', 'DummyCLASS');
+
+        $this->publishes([
+            __DIR__ . '/views' => resource_path('views/vendor/DummyCLASS'),
+        ]);
+
+        $this->publishes([
+            __DIR__ . '/assets' => public_path('vendor/DummyCLASS'),
+        ], 'public');
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+            ]);
+        }
+
+
+    }
+}
