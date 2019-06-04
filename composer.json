@@ -6,6 +6,12 @@
     "laravel",
     "package"
   ],
+  "authors": [
+    {
+      "name": "Shawn Gao",
+      "email": "fishis@163.com"
+    }
+  ],
   "license": "MIT",
   "require": {
     "illuminate/filesystem": "^5.8",
