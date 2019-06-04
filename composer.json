@@ -3,7 +3,8 @@
   "description": "PHP tool for scaffolding laravel package",
   "keywords": [
     "php",
-    "DummyCLASS"
+    "laravel",
+    "package"
   ],
   "license": "MIT",
   "require": {
