@@ -114,7 +114,7 @@ abstract class Generator
      */
     public function getBasePath()
     {
-        return $this->makePath([__DIR__ . '/../', 'target']);
+        return $this->makePath([getcwd(), 'target']);
     }
 
 
