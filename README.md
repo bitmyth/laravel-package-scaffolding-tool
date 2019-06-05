@@ -1,10 +1,13 @@
 # Simple tool for scaffolding laravel package
 ### Install
 ```php
-composer require bitmyth/lps
+composer global require bitmyth/lps
 ```
 ### Usage
 
+```
+export PATH='~/.composer/vendor/bin':$PATH
+```
 ```php
-php test.php make:package Foo
+laravel-package make:package Foo
 ```
