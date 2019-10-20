@@ -21,4 +21,10 @@ $g->setLaravel(new \Illuminate\Container\Container());
 
 $app->add($g);
 
+$factoryGenerator = new \Myth\Generators\FactoryGenerator\FactoryGeneratorCommand();
+$factoryGenerator->setLaravel(new \Illuminate\Container\Container());
+
+$app->add($factoryGenerator);
+
+
 $app->run();
