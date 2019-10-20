@@ -14,11 +14,11 @@
   ],
   "license": "MIT",
   "require": {
-    "illuminate/filesystem": "^5.8",
-    "illuminate/support": "^5.8",
-    "illuminate/config": "^5.8",
-    "illuminate/console": "^5.8",
-    "illuminate/container": "^5.8"
+    "illuminate/filesystem": "^5.7",
+    "illuminate/support": "^5.7",
+    "illuminate/config": "^5.7",
+    "illuminate/console": "^5.7",
+    "illuminate/container": "^5.7"
   },
   "autoload": {
     "psr-4": {
